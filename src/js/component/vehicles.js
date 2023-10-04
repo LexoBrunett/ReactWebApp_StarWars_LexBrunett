@@ -3,7 +3,7 @@ import { Context } from "../store/appContext"
 import Planets from "./planets"
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import vehicles from "../../styles/vehicles.css"
+import vehicles from "../../styles/index.css"
 
 
 
@@ -23,7 +23,7 @@ const Vehicles = (props) => {
 
                 <h5 className="card-title text-left text-white">{props.name}</h5>
                 <p className="card-text  text-left" >{props.model}</p>
-                <p className="card-text">Cantidad de pasajeros: {props.passengers}</p>
+                <p className="card-text">Passengers: {props.passengers}</p>
                 <div className="d-flex justify-content-between">
                     <Link to={"/details/vehicles/" + props.id} className="btn btn-outline-primary">Learn more!</Link>
                     <button type="button" className="btn btn-outline-warning "onClick={() => actions.agregarFavorito(props.name)}><i class="fa fa-heart"></i></button>
