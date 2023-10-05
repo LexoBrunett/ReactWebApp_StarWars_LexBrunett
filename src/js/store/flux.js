@@ -36,7 +36,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 // mi funcion para login
 			login: async (email, password) => {
 				try {
-					let data = await axios.post("https://vigilant-sniffle-x5ww77qq6gv7fwg7-3000.app.github.dev/login", {   //acá uno con el back
+					let data = await axios.post("https://miniature-spork-55w547rxwrh46xq-3000.app.github.dev/login", {   //acá uno con el back
 						"email": email,
 						"password": password
 
@@ -65,7 +65,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			validoToken: async () => {
 				let token = localStorage.getItem("token")
 				try {
-					let data = await axios.get("https://vigilant-sniffle-x5ww77qq6gv7fwg7-3000.app.github.dev/valid_token", {   //acá uno con el back
+					let data = await axios.get("https://miniature-spork-55w547rxwrh46xq-3000.app.github.dev/valid_token", {   //acá uno con el back
 						headers: { 'Authorization': 'Bearer ' + token }
 
 					})
@@ -90,7 +90,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			mostrarfavoritos: async () => {
 				let token = localStorage.getItem("token")
 				try {
-					let data = await axios.get("https://vigilant-sniffle-x5ww77qq6gv7fwg7-3000.app.github.dev/usuario/favorito", {   //acá uno con el back
+					let data = await axios.get("https://miniature-spork-55w547rxwrh46xq-3000.app.github.dev/usuario/favorito", {   //acá uno con el back
 						headers: { 'Authorization': 'Bearer ' + token }
 
 					})
@@ -116,7 +116,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 //mi funcion para signup
 			signup: async (email, password) => {
 				try {
-					let data = await axios.post("https://vigilant-sniffle-x5ww77qq6gv7fwg7-3000.app.github.dev/signup", {   //acá uno con el back
+					let data = await axios.post("https://miniature-spork-55w547rxwrh46xq-3000.app.github.dev/signup", {   //acá uno con el back
 						"email": email,
 						"password": password
 
@@ -143,7 +143,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			},
 
-			obtenerVehiculosClaudia: async () => {
+			obtenerVehiculos: async () => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/

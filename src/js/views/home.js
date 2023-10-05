@@ -14,7 +14,7 @@ export const Home = () => {
 	useEffect(() => {
 		actions.obtenerplanetas();
 		actions.obtenerPersonajes();
-		actions.obtenerVehiculosClaudia();
+		actions.obtenerVehiculos();
 	}, []);
 
 
