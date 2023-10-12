@@ -191,7 +191,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			},
 			agregarFavorito: (name) => {
-
+					
 
 				setStore({ favoritos: [...getStore().favoritos, name] });
 
