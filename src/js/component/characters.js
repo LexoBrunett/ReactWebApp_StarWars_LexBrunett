@@ -33,7 +33,7 @@ const Characters = props => {
     )
 }
 
-Characters.PropTypes = {
+Characters.propTypes = {
     name: PropTypes.string,
     gender: PropTypes.string,
     haircolor: PropTypes.string,

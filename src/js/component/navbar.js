@@ -36,10 +36,10 @@ export const Navbar = () => {
     <nav className="navbar navbar-light bg-light mb-3 sticky-top nav">
       <img id="local-nav-logo-desktop" className="d-flex ms-5 " style={{ width: "100px" }} src="https://logos-marcas.com/wp-content/uploads/2020/11/Star-Wars-Logo.png" />
       <div className="nav-item dropdown">
-        {store.autenticar ?
+        {store.autenticar}
         <a className="nav-link dropdown-toggle btn btn-primary boton " style={{color: "black"}} role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Favorites <span className="badge text-bg-secondary ">{store.favoritos.length}</span>
-        </a>: null}
+        </a>
         
         <ul className="dropdown-menu menu">
           {store.favoritos.map(item => (

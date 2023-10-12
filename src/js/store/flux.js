@@ -90,7 +90,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			mostrarfavoritos: async () => {
 				let token = localStorage.getItem("token")
 				try {
-					let data = await axios.get("/user/favorites", {   //acá uno con el back
+					let data = await axios.get("/user/favoritos", {   //acá uno con el back
 						headers: { 'Authorization': 'Bearer ' + token }
 
 					})
