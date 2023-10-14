@@ -47,7 +47,7 @@ export const Navbar = () => {
 								<div  className="favorite-item">
 									<li>
 										<a class="dropdown-item" href="#">{item} 
-											<i className="fas fa-trash-alt trash" onClick={()=>actions.getDeleteFavorite(item)}></i>
+											<i className="fas fa-trash-alt trash" onClick={()=>actions.eliminarFavorito(item)}></i>
 										</a>									
 									</li>
 								</div>
